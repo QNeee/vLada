@@ -1,0 +1,123 @@
+:root {
+  --main-bcg: white;
+  --header-bcg: blue;
+  --footer-bcg: tomato;
+  --button-color: yellow;
+  --button-bcg: green;
+  --accent-color: #2196f3;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background-color: grey;
+}
+.logo {
+  align-items: center;
+  text-align: center;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 2px solid tomato; */
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+}
+.nav-items {
+  margin-right: 30px;
+}
+.allready-teg {
+  text-align: center;
+  padding-bottom: 33px;
+  color: black;
+}
+.allready {
+  color: var(--button-color);
+  background-color: var(--button-bcg);
+  cursor: pointer;
+}
+.allready:hover,
+.allready:focus {
+  color: white;
+  background-color: var(--accent-color);
+}
+.waiting-teg {
+  text-align: center;
+  padding-bottom: 33px;
+}
+.waiting {
+  color: black;
+  background-color: yellow;
+  cursor: pointer;
+}
+.waiting:hover,
+.waiting:focus {
+  color: white;
+  background-color: var(--accent-color);
+}
+.soon-teg {
+  text-align: center;
+  padding-bottom: 33px;
+}
+.waiting-soon {
+  color: black;
+  background-color: yellow;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  cursor: pointer;
+}
+.waiting-soon:hover,
+.waiting-soon:focus {
+  color: white;
+  background-color: var(--accent-color);
+}
+.social-flex {
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #f5f4fa;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--filter-secondarycolor);
+}
+.team-bcg:not(:last-child) {
+  margin-right: 10px;
+}
+.team-icon {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  fill: currentColor;
+}
+.team-icons {
+  display: flex;
+  list-style-type: none;
+  margin-left: 32px;
+  margin-top: 16px;
+  width: 206px;
+  height: 44px;
+}
