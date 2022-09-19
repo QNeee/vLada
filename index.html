@@ -19,102 +19,167 @@
   </head>
   <body>
     <header>
+      <!-- nav-menu -->
       <nav class="nav-menu">
         <a class="logo" href="#">vLada.com</a>
         <ul class="nav-list">
-          <li class="nav-items">Вже відкрились</li>
-          <li class="nav-items">Анонси Серверів</li>
-          <li class="nav-items">Співпраця</li>
+          <li class="nav-items"><a href="#">Вже відкрились</a></li>
+          <li class="nav-items"><a href="#">Чекають відкриття</a></li>
+          <li class="nav-items"><a href="#">Скоро</a></li>
+          <li class="nav-items"><a href="#">Співпраця</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="allready-opened container">
-        <h1 class="allready-teg">Вже відкрились</h1>
-        <button class="allready">
-          La2dream.com
-          <p class="opened-date">Відкритий 07/08/1994</p>
-        </button>
-        <button class="allready">
-          Scryde.ru
-          <p class="opened-date">Відкритий 07/08/1994</p>
-        </button>
-        <button class="allready">
-          Forceplay.org
-          <p class="opened-date">Відкритий 07/08/1994</p>
-        </button>
-        <button class="allready">
-          Warfrey.com
-          <p class="opened-date">Відкритий 07/08/1994</p>
-        </button>
-        <button class="allready">
-          Lin2Crazy.ru
-          <p class="opened-date">Відкритий 07/08/1994</p>
-        </button>
-        <button class="allready">
-          Zone-game.ms
-          <p class="opened-date">Відкритий 07/08/1994</p>
-        </button>
-      </section>
-      <section class="waiting-opened container">
-        <h1 class="waiting-teg">Чекають відкриття</h1>
-        <button class="waiting">
-          La2dream.com
-          <p class="opened-date-waiting">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting">
-          Scryde.ru
-          <p class="opened-date-waiting">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting">
-          Forceplay.org
-          <p class="opened-date-waiting">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting">
-          Warfrey.com
-          <p class="opened-date-waiting">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting">
-          Lin2Crazy.ru
-          <p class="opened-date-waiting">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting">
-          Zone-game.ms
-          <p class="opened-date-waiting">Відкритий 07/08/1994</p>
-        </button>
-      </section>
-      <section class="waiting-opened-soon container">
-        <h1 class="soon-teg">Скоро</h1>
-        <button class="waiting-soon">
-          La2dream.com
-          <p class="opened-date-soon">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting-soon">
-          Scryde.ru
-          <p class="opened-date-soon">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting-soon">
-          Forceplay.org
-          <p class="opened-date-soon">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting-soon">
-          Warfrey.com
-          <p class="opened-date-soon">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting-soon">
-          Lin2Crazy.ru
-          <p class="opened-date-soon">Відкритий 07/08/1994</p>
-        </button>
-        <button class="waiting-soon">
-          Zone-game.ms
-          <p class="opened-date-soon">Відкритий 07/08/1994</p>
-        </button>
+      <!-- allready-opened -->
+      <section class="container">
+        <div class="wrap">
+          <ul class="allready-list">
+            <h1 class="allready-teg">Вже відкриті</h1>
+            <li class="lst">
+              <button data-modal-open class="allready">
+                <span class="name-allready">La2dream.com</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="allready">
+                <span class="name-allready">Scryde.ru</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="allready">
+                <span class="name-allready">Forceplay.org</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="allready">
+                <span class="name-allready">Warfrey.org</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="allready">
+                <span class="name-allready">Lin2Crazy.ru</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="allready">
+                <span class="name-allready">Zone-game.ms</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+          </ul>
+          <!-- waiting-opened -->
+          <ul class="waiting-list">
+            <h1 class="waiting-teg">Чекають на відкриття</h1>
+            <li class="lst">
+              <button data-modal-open class="waiting">
+                <span class="name-waiting">La2dream.com</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting">
+                <span class="name-waiting">Scryde.ru</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting">
+                <span class="name-waiting">Forceplay.org</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting">
+                <span class="name-waiting">Warfrey.org</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting">
+                <span class="name-waiting">Lin2Crazy.ru</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting">
+                <span class="name-waiting">Zone-game.ms</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+          </ul>
+          <!-- waiting-opened-soon -->
+          <ul class="soon-list">
+            <h1 class="soon-teg">Скоро</h1>
+            <li class="lst">
+              <button data-modal-open class="waiting-soon">
+                <span class="name-soon">La2dream.com</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting-soon">
+                <span class="name-soon">Scryde.ru</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting-soon">
+                <span class="name-soon">Forceplay.org</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting-soon">
+                <span class="name-soon">Warfrey.org</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting-soon">
+                <span class="name-soon">Lin2Crazy.ru</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+            <li class="lst">
+              <button data-modal-open class="waiting-soon">
+                <span class="name-soon">Zone-game.ms</span>
+                <span class="rate"> X50</span>
+                <span class="date">07/08/1994</span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="container">
       <article>
-        <h2>Нові та вже відкриті сервера L2 найкращої якості</h2>
-        <p>
+        <h2 class="footer-teg">
+          Нові та вже відкриті сервера L2 найкращої якості
+        </h2>
+        <p class="footer-text">
           Тут розташовані накраще підібрані для вас сервера великої гри яка
           захопила серця багатьох людей , для вас ми зібрали їх в зручному
           форматі кнопок , аби ви не витрачали багато часу аби зробити вибір, на
@@ -123,7 +188,7 @@
         </p>
       </article>
       <address>
-        <h3>
+        <h3 class="footer-teg">
           Для отримання інформації щодо співпраці перейдіть за посиланнями.
         </h3>
 

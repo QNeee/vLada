@@ -5,15 +5,27 @@
   --button-color: yellow;
   --button-bcg: green;
   --accent-color: #2196f3;
+  --caubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --wait: 250ms;
+  --footer-bcg: #2f303a;
 }
 body {
   font-family: Roboto, sans-serif;
-  background-color: grey;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/body.jpg);
+  background-color: var(--hero-bcg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .logo {
+  color: white;
   align-items: center;
   text-align: center;
-
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -31,6 +43,8 @@ body {
 
   /* outline: 2px solid tomato; */
 }
+
+/* nav */
 .nav-list {
   list-style-type: none;
   display: flex;
@@ -41,47 +55,71 @@ body {
 .nav-items {
   margin-right: 30px;
 }
+/* tegs */
 .allready-teg {
   text-align: center;
   padding-bottom: 33px;
-  color: black;
+  color: greenyellow;
 }
+.waiting-teg {
+  text-align: center;
+  padding-bottom: 33px;
+  color: yellow;
+}
+.soon-teg {
+  text-align: center;
+  padding-bottom: 33px;
+  color: aqua;
+}
+/* btns */
 .allready {
-  color: var(--button-color);
-  background-color: var(--button-bcg);
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid transparent;
   cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: var(--button-color);
+  background-color: grey;
 }
+.allready-list,
+.waiting-list,
+.soon-list {
+  list-style-type: none;
+}
+
 .allready:hover,
 .allready:focus {
   color: white;
   background-color: var(--accent-color);
 }
-.waiting-teg {
-  text-align: center;
-  padding-bottom: 33px;
-}
+
 .waiting {
-  color: black;
-  background-color: yellow;
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid transparent;
   cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: grey;
 }
 .waiting:hover,
 .waiting:focus {
-  color: white;
   background-color: var(--accent-color);
 }
-.soon-teg {
-  text-align: center;
-  padding-bottom: 33px;
-}
 .waiting-soon {
-  color: black;
-  background-color: yellow;
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: grey;
   cursor: pointer;
 }
 .waiting-soon:hover,
@@ -89,21 +127,45 @@ body {
   color: white;
   background-color: var(--accent-color);
 }
-.social-flex {
+.wrap {
+  display: flex;
 }
+/* rate */
+.rate,
+.date {
+  color: white;
+  margin-left: 10px;
+}
+.name-allready {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: green;
+}
+.name-waiting {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: yellow;
+}
+.name-soon {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: aqua;
+}
+/* social */
 .social-link {
   width: 44px;
   height: 44px;
   display: block;
   border-radius: 50%;
-  color: #afb1b8;
-  background-color: #f5f4fa;
+  color: white;
+  background-color: grey;
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  color: var(--filter-secondarycolor);
+  color: white;
 }
+/* social-icons */
 .team-bcg:not(:last-child) {
   margin-right: 10px;
 }
@@ -121,3 +183,13 @@ body {
   width: 206px;
   height: 44px;
 }
+/* footer */
+.footer-teg {
+  font-weight: 700;
+  color: white;
+}
+.footer-text {
+  font-weight: 400;
+  color: white;
+}
+/*  server description */
