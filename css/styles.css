@@ -17,11 +17,12 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/body.jpg);
-  background-color: var(--hero-bcg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .logo {
   color: white;
   align-items: center;
@@ -46,15 +47,18 @@ body {
 
 /* nav */
 .nav-list {
-  list-style-type: none;
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
-  opacity: 0;
-  pointer-events: none;
+  text-align: center;
 }
-.nav-items {
+.nav-list .lst {
   margin-right: 30px;
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
 }
 /* tegs */
 .allready-teg {
