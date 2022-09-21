@@ -288,4 +288,63 @@ ul {
   font-weight: 400;
   color: white;
 }
-/*  server description */
+/* description */
+.article {
+  padding: 30px;
+  background-color: grey;
+  max-width: 1600px;
+}
+.main-description {
+  color: black;
+  background-color: gold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-description-teg {
+  padding: 30px;
+}
+.main-description-text {
+  padding: 30px;
+}
+.description-teg {
+  padding: 30px;
+}
+.description-text {
+  padding: 30px;
+}
+.first-description {
+  background-color: white;
+}
+.second-description-race {
+  background-color: yellowgreen;
+  outline: 1px solid tomato;
+  border-radius: 4px;
+}
+.second-description-version {
+  background-color: lightgray;
+  outline: 1px solid aquamarine;
+  border-radius: 4px;
+}
+.second-description-list {
+  padding: 40px;
+}
+.second-description-teg {
+  padding: 40px;
+}
+.saga-1,
+.saga-2,
+.saga-3,
+.saga-4 {
+  outline: 1px solid tomato;
+  background-color: white;
+}
+.end-of-article {
+  background-color: black;
+  color: white;
+}
+.description-link {
+  display: block;
+  width: 300px;
+  color: red;
+}
