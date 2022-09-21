@@ -77,13 +77,7 @@ body {
   color: aqua;
 }
 /* btns */
-.allready-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 15px;
-  text-decoration: none;
-}
+
 .waiting-link {
   display: block;
   width: 100%;
@@ -100,7 +94,6 @@ body {
 }
 
 .allready {
-  position: relative;
   width: 300px;
   height: 50px;
   justify-content: center;
@@ -112,6 +105,7 @@ body {
   color: var(--button-color);
   background-color: grey;
 }
+
 .allready-list,
 .waiting-list,
 .soon-list {
@@ -125,7 +119,6 @@ body {
 }
 
 .waiting {
-  position: relative;
   width: 300px;
   height: 50px;
   justify-content: center;
@@ -141,7 +134,6 @@ body {
   background-color: var(--accent-color);
 }
 .waiting-soon {
-  position: relative;
   width: 300px;
   height: 50px;
   justify-content: center;
@@ -161,6 +153,18 @@ body {
   display: flex;
 }
 /* images */
+.relative-a {
+  position: relative;
+  cursor: pointer;
+}
+.relative-b {
+  position: relative;
+  cursor: pointer;
+}
+.relative-c {
+  position: relative;
+  cursor: pointer;
+}
 .servers-a {
   position: absolute;
   display: none;
@@ -185,9 +189,9 @@ body {
   top: 0;
   left: 0;
 }
-.allready-link:hover .servers-a,
-.waiting-link:hover .servers-b,
-.soon-link:hover .servers-c {
+.relative-a:hover .servers-a,
+.relative-b:hover .servers-b,
+.relative-c:hover .servers-c {
   display: block;
 }
 
