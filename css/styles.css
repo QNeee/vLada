@@ -394,20 +394,20 @@ ul {
   cursor: pointer;
 }
 .form {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .fill {
   color: red;
 }
 .chose-list {
   list-style: none;
-  padding: 30px;
 }
 .chose-lst {
   margin-bottom: 30px;
 }
 .subscription {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .fortop {
   background-color: grey;
@@ -420,4 +420,7 @@ ul {
 .forprem {
   background-color: red;
   color: yellow;
+}
+textarea {
+  resize: none;
 }
