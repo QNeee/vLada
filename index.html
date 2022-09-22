@@ -477,6 +477,74 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <span class="fill">Заповніть форму</span>
+        <form class="form">
+          <div class="form-field">
+            <ul class="chose-list">
+              <li class="chose-lst">
+                <label for="server-name"
+                  >Введіть назву сервера
+                  <input
+                    type="text"
+                    name="server-name"
+                    id="server-name"
+                    placeholder="la2dream.com"
+                /></label>
+              </li>
+              <li class="chose-lst">
+                <label for="server-rate"
+                  >Введіть рейти сервера
+                  <input
+                    type="text"
+                    name="server-rate"
+                    id="server-rate"
+                    placeholder="x50"
+                /></label>
+              </li>
+              <li class="chose-lst">
+                <label for="server-email"
+                  >Введіть пошту для зворотньго звязку
+                  <input
+                    type="email"
+                    name="server-email"
+                    id="server-email"
+                    placeholder="mail@mail.com"
+                /></label>
+              </li>
+              <li class="chose-lst">
+                <label for="server-date"
+                  >Виберіть дату відкриття
+                  <input type="date" name="server-date" id="server-date"
+                /></label>
+              </li>
+              <li class="chose-lst">
+                <p class="subscription">Виберіть підписку</p>
+                <input
+                  type="radio"
+                  name="subscription"
+                  value="premium"
+                  id="premium"
+                />
+                <label class="forprem" for="premium"
+                  >Завжди вверху з червоною рамкою Premium</label
+                >
+              </li>
+              <li class="chose-lst">
+                <input type="radio" name="subscription" value="top" id="top" />
+                <label class="fortop" for="top">Завжди вверху TOP</label>
+              </li>
+              <li class="chose-lst">
+                <input type="radio" name="subscription" value="vip" id="vip" />
+                <label class="forvip" for="vip"
+                  >Завжди вверху з рамкой жовтого кольору VIP</label
+                >
+              </li>
+              <li class="chose-lst">
+                <button type="submit">Перейти до сплати</button>
+              </li>
+            </ul>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

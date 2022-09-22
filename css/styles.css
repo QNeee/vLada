@@ -393,3 +393,31 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+.form {
+  padding: 30px;
+}
+.fill {
+  color: red;
+}
+.chose-list {
+  list-style: none;
+  padding: 30px;
+}
+.chose-lst {
+  margin-bottom: 30px;
+}
+.subscription {
+  margin-bottom: 30px;
+}
+.fortop {
+  background-color: grey;
+  color: white;
+}
+.forvip {
+  background-color: yellow;
+  color: green;
+}
+.forprem {
+  background-color: red;
+  color: yellow;
+}
