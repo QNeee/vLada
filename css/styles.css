@@ -374,7 +374,7 @@ ul {
   background-color: white;
   border-radius: 4px;
   width: 528px;
-  height: 581px;
+  max-height: 1000px;
   transform: scale(1);
   transition: transform var(--wait) var(--caubic);
 }
@@ -399,6 +399,29 @@ ul {
 }
 .fill {
   color: red;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: red;
+}
+.form-field {
+  margin-top: 30px;
+}
+.server-comments {
+  margin-left: 30px;
+  margin-top: 30px;
+  display: block;
+  width: 300px;
+}
+.modal-text {
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.form-input {
+  width: 200px;
 }
 .chose-list {
   list-style: none;
@@ -407,6 +430,7 @@ ul {
   margin-bottom: 30px;
 }
 .subscription {
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 .fortop {

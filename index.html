@@ -483,8 +483,9 @@
             <ul class="chose-list">
               <li class="chose-lst">
                 <label for="server-name"
-                  >Введіть назву сервера
+                  ><span class="modal-text">Введіть назву сервера</span>
                   <input
+                    class="form-input"
                     type="text"
                     name="server-name"
                     id="server-name"
@@ -493,8 +494,9 @@
               </li>
               <li class="chose-lst">
                 <label for="server-rate"
-                  >Введіть рейти сервера
+                  ><span class="modal-text">Введіть рейти сервера</span>
                   <input
+                    class="form-input"
                     type="text"
                     name="server-rate"
                     id="server-rate"
@@ -503,8 +505,11 @@
               </li>
               <li class="chose-lst">
                 <label for="server-email"
-                  >Введіть пошту для зворотньго звязку
+                  ><span class="modal-text"
+                    >Введіть пошту для зворотньго звязку</span
+                  >
                   <input
+                    class="form-input"
                     type="email"
                     name="server-email"
                     id="server-email"
@@ -513,7 +518,7 @@
               </li>
               <li class="chose-lst">
                 <label for="server-date"
-                  >Виберіть дату відкриття
+                  ><span class="modal-text">Виберіть дату відкриття</span>
                   <input type="date" name="server-date" id="server-date"
                 /></label>
               </li>
@@ -526,7 +531,7 @@
                   id="premium"
                 />
                 <label class="forprem" for="premium"
-                  >Завжди вверху з червоною рамкою Premium</label
+                  ><span>Завжди вверху з червоною рамкою Premium</span></label
                 >
               </li>
               <li class="chose-lst">
@@ -541,8 +546,9 @@
               </li>
               <li class="chose-lst">
                 <label for="server-comments">
-                  Додайте коментар якщо є
+                  <span class="modal-text">Додайте коментар</span>
                   <textarea
+                    class="server-comments"
                     name="server-comments"
                     id="server-comments"
                     placeholder="Акція - Перший Герой отримає 50000"
