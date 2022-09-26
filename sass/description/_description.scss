@@ -1,0 +1,93 @@
+.article {
+    padding: 50px;
+    background-color: grey;
+    max-width: 1600px;
+}
+
+.main-description {
+
+    color: black;
+    background-color: gold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__teg {
+        padding: 30px;
+    }
+
+    &__text {
+        padding: 30px;
+    }
+}
+
+.description-teg {
+    padding: 30px;
+}
+
+.description-text {
+    padding: 30px;
+}
+
+.first-description {
+    padding: 40px;
+    background-color: white;
+}
+
+
+
+.second-description {
+    background-color: yellowgreen;
+    outline: 1px solid tomato;
+    border-radius: 4px;
+
+    &__text {
+        margin-bottom: 10px;
+    }
+
+    &-list {
+        padding: 40px;
+
+        &__item {
+
+            margin-bottom: 20px;
+
+        }
+
+
+    }
+
+
+
+    &-teg {
+        padding: 40px;
+    }
+
+}
+
+.saga-1,
+.saga-2,
+.saga-3,
+.saga-4 {
+    outline: 1px solid tomato;
+    background-color: white;
+}
+
+.end-of-article {
+    background-color: black;
+    color: white;
+}
+
+.description-link {
+    display: block;
+    height: 20px;
+    width: 150px;
+    color: red;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    text-align: center;
+
+}

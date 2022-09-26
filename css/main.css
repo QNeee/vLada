@@ -346,4 +346,80 @@ textarea {
 }
 .form-list__form-input {
   width: 200px;
+}
+
+.article {
+  padding: 50px;
+  background-color: grey;
+  max-width: 1600px;
+}
+
+.main-description {
+  color: black;
+  background-color: gold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-description__teg {
+  padding: 30px;
+}
+.main-description__text {
+  padding: 30px;
+}
+
+.description-teg {
+  padding: 30px;
+}
+
+.description-text {
+  padding: 30px;
+}
+
+.first-description {
+  padding: 40px;
+  background-color: white;
+}
+
+.second-description {
+  background-color: yellowgreen;
+  outline: 1px solid tomato;
+  border-radius: 4px;
+}
+.second-description__text {
+  margin-bottom: 10px;
+}
+.second-description-list {
+  padding: 40px;
+}
+.second-description-list__item {
+  margin-bottom: 20px;
+}
+.second-description-teg {
+  padding: 40px;
+}
+
+.saga-1,
+.saga-2,
+.saga-3,
+.saga-4 {
+  outline: 1px solid tomato;
+  background-color: white;
+}
+
+.end-of-article {
+  background-color: black;
+  color: white;
+}
+
+.description-link {
+  display: block;
+  height: 20px;
+  width: 150px;
+  color: red;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
