@@ -69,6 +69,21 @@
     }
 
     &-list {
+        &__forprem {
+            background-color: red;
+            color: yellow;
+        }
+
+        &__forvip {
+            background-color: yellow;
+            color: green;
+        }
+
+        &__fortop {
+            background-color: grey;
+            color: white;
+        }
+
         &__subscription {
             text-transform: uppercase;
             margin-bottom: 10px;

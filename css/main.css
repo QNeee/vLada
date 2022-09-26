@@ -41,6 +41,10 @@ ul {
   display: block;
 }
 
+textarea {
+  resize: none;
+}
+
 .header {
   max-width: 1600px;
   background-color: #2f303a;
@@ -253,4 +257,93 @@ ul {
   height: 20px;
   margin: 12px;
   fill: currentColor;
+}
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  outline: 1px solid tomato;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(2);
+}
+
+.modal {
+  position: relative;
+  background-color: white;
+  border-radius: 4px;
+  width: 528px;
+  max-height: 1000px;
+  transform: scale(1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 8px;
+  top: 8px;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.modal__fill {
+  color: red;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.form-field {
+  margin-top: 30px;
+}
+.form-list__forprem {
+  background-color: red;
+  color: yellow;
+}
+.form-list__forvip {
+  background-color: yellow;
+  color: green;
+}
+.form-list__fortop {
+  background-color: grey;
+  color: white;
+}
+.form-list__subscription {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.form-list__modal-text {
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.form-list__item {
+  margin-bottom: 30px;
+}
+.form-list__form-input {
+  width: 200px;
 }/*# sourceMappingURL=main.css.map */
