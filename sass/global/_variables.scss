@@ -1,0 +1,55 @@
+$main-bcg: white;
+$header-bcg: blue;
+$footer-bcg: tomato;
+$button-color: yellow;
+$button-bcg: green;
+$accent-color: #2196f3;
+$caubic: cubic-bezier(0.4, 0, 0.2, 1);
+$wait: 250ms;
+$footer-bcg: #2f303a;
+$primary-text: #212121;
+$filter-secondarycolor: #ffffff;
+
+body {
+    color: $primary-text;
+    background-color: $filter-secondarycolor;
+    font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* outline: 2px solid tomato; */
+}
+
+.lst {
+    list-style: none;
+}
+
+.rate,
+.date {
+    color: white;
+    margin-left: 10px;
+}
+
+.allready-list__relative-a:hover .allready-list__servers-a,
+.waiting-list__relative-b:hover .waiting-list__servers-b,
+.soon-list__relative-c:hover .soon-list__servers-c {
+    display: block;
+}

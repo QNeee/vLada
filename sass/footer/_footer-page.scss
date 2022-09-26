@@ -1,0 +1,54 @@
+.footer {
+    max-width: 1600px;
+    background-color: #2f303a;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+
+    &__teg {
+        font-weight: 700;
+        color: white;
+    }
+
+    &__text {
+        font-weight: 400;
+        color: white;
+    }
+
+}
+
+.team-icons {
+    display: flex;
+    list-style-type: none;
+    margin-left: 32px;
+    margin-top: 16px;
+    width: 206px;
+    height: 44px;
+
+    &__social-link {
+        width: 44px;
+        height: 44px;
+        display: block;
+        border-radius: 50%;
+        color: white;
+        background-color: grey;
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: white;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin: 12px;
+        fill: currentColor;
+    }
+}

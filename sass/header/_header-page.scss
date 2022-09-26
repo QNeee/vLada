@@ -1,0 +1,41 @@
+.header {
+    max-width: 1600px;
+    background-color: #2f303a;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: blanchedalmond;
+    }
+}
+
+.logo {
+    color: blueviolet;
+    align-items: center;
+    text-align: center;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
