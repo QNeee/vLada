@@ -55,7 +55,9 @@ ul {
 
 .link {
   text-decoration: none;
-  color: white;
+  color: green;
+  display: block;
+  text-transform: uppercase;
 }
 
 .rate,
@@ -125,6 +127,145 @@ textarea {
   text-decoration: none;
 }
 
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  padding: 15px 10px 48px 40px;
+  z-index: 999;
+}
+@media screen and (max-width: 479px) {
+  .mob-menu {
+    left: 0px;
+  }
+}
+.mob-menu-list__contacts {
+  margin-top: auto;
+}
+.mob-menu-list__social {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.mob-menu-list__social-item {
+  position: relative;
+}
+.mob-menu-list__social-item:not(:first-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+.mob-menu-list__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.mob-menu-list__social .link {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mob-menu-list__social .link:hover, .mob-menu-list__social .link:focus {
+  color: #2196f3;
+}
+@media screen and (max-width: 479px) {
+  .mob-menu-list__social .link {
+    font-size: 10px;
+  }
+}
+.mob-menu-list__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+@media screen and (max-width: 479px) {
+  .mob-menu-list__tel {
+    font-size: 25px;
+  }
+}
+.mob-menu-list__tel:hover, .mob-menu-list__tel:focus {
+  color: #2196f3;
+}
+.mob-menu-list__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mob-menu-list__mail:hover, .mob-menu-list__mail:focus {
+  color: #2196f3;
+}
+.mob-menu-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mob-menu-list__link:hover, .mob-menu-list__link:focus {
+  color: #2196f3;
+}
+.mob-menu-list__link--current {
+  color: #2196f3;
+}
+
+.menu-open {
+  position: relative;
+  top: -20px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  fill: white;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+.menu-open:hover, .menu-open:focus {
+  fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #212121;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+.menu-close:hover, .menu-close:focus {
+  fill: #2196f3;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @media screen and (min-width: 1200px) {
   .main {
     max-width: 1600px;
@@ -174,12 +315,15 @@ textarea {
   }
 }
 
+.server-list {
+  position: relative;
+}
 @media screen and (min-width: 320px) {
-  .server-list {
-    background-color: grey;
-  }
   .server-list__server-name, .server-list__server-status, .server-list__server-rate, .server-list__server-chronicle {
     margin-right: 10px;
+  }
+  .server-list__server-name, .server-list__server-status, .server-list__server-rate, .server-list__server-chronicle, .server-list__server-date {
+    border-bottom: 1px solid grey;
   }
 }
 @media screen and (min-width: 320px) {
@@ -190,22 +334,29 @@ textarea {
   }
 }
 @media screen and (min-width: 320px) {
+  .server-list.gold-servers .server-list__server-name, .server-list.gold-servers .server-list__server-rate, .server-list.gold-servers .server-list__server-chronicle, .server-list.gold-servers .server-list__server-date {
+    text-align: center;
+  }
   .server-list.gold-servers .server-list__server-status {
-    width: 44px;
-    height: 20px;
     background-color: gold;
-    color: black;
-    justify-content: center;
   }
-  .server-list.gold-servers .server-list__server-name {
-    width: 100px;
-    color: white;
-    justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+  .server-list.silver-servers .server-list__server-name, .server-list.silver-servers .server-list__server-rate, .server-list.silver-servers .server-list__server-chronicle, .server-list.silver-servers .server-list__server-date {
+    text-align: center;
   }
-  .server-list.gold-servers .server-list__server-rate {
-    width: 100px;
-    color: white;
-    justify-content: center;
+  .server-list.silver-servers .server-list__server-status {
+    background-color: silver;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .server-list.bronze-servers .server-list__server-name, .server-list.bronze-servers .server-list__server-rate, .server-list.bronze-servers .server-list__server-chronicle, .server-list.bronze-servers .server-list__server-date {
+    text-align: center;
+  }
+  .server-list.bronze-servers .server-list__server-status {
+    background-color: #cd7f32;
   }
 }
 

@@ -50,18 +50,26 @@
 }
 
 .server-list {
-
+    position: relative;
 
     @media screen and (min-width:320px) {
-        background-color: grey;
+
 
         &__server-name,
         &__server-status,
         &__server-rate,
         &__server-chronicle {
             margin-right: 10px;
+
         }
 
+        &__server-name,
+        &__server-status,
+        &__server-rate,
+        &__server-chronicle,
+        &__server-date {
+            border-bottom: 1px solid grey;
+        }
 
     }
 
@@ -79,26 +87,55 @@
 .server-list.gold-servers {
     @media screen and (min-width:320px) {
         .server-list {
+
+
+            &__server-name,
+            &__server-rate,
+            &__server-chronicle,
+            &__server-date {
+                text-align: center;
+            }
+
             &__server-status {
-                width: 44px;
-                height: 20px;
                 background-color: gold;
-                color: black;
-                justify-content: center;
+            }
+        }
+    }
+}
+
+.server-list.silver-servers {
+    @media screen and (min-width:320px) {
+        .server-list {
+
+
+            &__server-name,
+            &__server-rate,
+            &__server-chronicle,
+            &__server-date {
+                text-align: center;
             }
 
-            &__server-name {
-                width: 100px;
+            &__server-status {
+                background-color: silver;
+            }
+        }
+    }
+}
 
-                color: white;
-                justify-content: center;
+.server-list.bronze-servers {
+    @media screen and (min-width:320px) {
+        .server-list {
+
+
+            &__server-name,
+            &__server-rate,
+            &__server-chronicle,
+            &__server-date {
+                text-align: center;
             }
 
-            &__server-rate {
-                width: 100px;
-
-                color: white;
-                justify-content: center;
+            &__server-status {
+                background-color: #cd7f32;
             }
         }
     }

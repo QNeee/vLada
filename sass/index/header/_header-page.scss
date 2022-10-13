@@ -51,3 +51,179 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+
+.mob-menu {
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    padding: 15px 10px 48px 40px;
+    z-index: 999;
+
+    @media screen and (max-width:479px) {
+
+        left: 0px;
+    }
+
+    &-list {
+
+        &__contacts {
+
+            margin-top: auto;
+        }
+
+        &__social {
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+
+            &-item {
+                position: relative;
+            }
+
+            &-item:not(:first-child)::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -10px;
+                width: 1px;
+                height: 22px;
+                background-color: rgba(33, 33, 33, 0.2);
+
+            }
+
+
+            &-item:not(:last-child) {
+                margin-right: 10px;
+
+            }
+
+            & .link {
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                color: $accent-color;
+
+                &:hover,
+                &:focus {
+                    color: $accent-color;
+                }
+
+                @media screen and (max-width:479px) {
+                    font-size: 10px;
+                }
+            }
+
+
+        }
+
+        &__tel {
+            @media screen and (max-width:479px) {
+                font-size: 25px;
+            }
+
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            color: $accent-color;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+
+        &__mail {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+
+            color: #757575;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+
+
+        }
+
+
+        &__link {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+
+            color: #212121;
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+
+            &--current {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+.menu-open {
+    position: relative;
+    top: -20px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    fill: white;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    color: #212121;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+
+.mob-menu.is-hidden {
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
